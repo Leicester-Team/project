@@ -5,6 +5,7 @@ Team Memmbers:
 - Ahmad Dabouqi
 - Ebrahim Ayyad
 
+
 ## Conflict Plan:
 ### Conflict Resolving Process:
 

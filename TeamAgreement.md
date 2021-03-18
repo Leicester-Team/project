@@ -1,9 +1,9 @@
 # Team Agreement:
 Team Memmbers:
-Bayan Alkhatib
-Ahmad Zatar
-Ahmad Dabouqi
-Ebrahim Ayyad
+- Bayan Alkhatib
+- Ahmad Zatar
+- Ahmad Dabouqi
+- Ebrahim Ayyad
 
 ## Conflict Plan:
 ### Conflict Resolving Process:
@@ -12,7 +12,7 @@ Ebrahim Ayyad
 - listen from every member engaged conflict.
 - try to find solution that fits everyone, and choose most suitable solution for team's benefit.
 
-###  raise concerns to members
+###  Raise Concerns to Members:
 - talk with targeted member in private.
 - explain the issue and try to understand his point of view and find some way to let him contribute more with the team.
 
@@ -28,26 +28,26 @@ Ebrahim Ayyad
 ### strategy for ensuring everyone’s voice is heard:
 everyday start meeting and make sure that everyone engage in this discussion.
 
-###  creating a safe environment 
+###  Creating a Safe Environment 
 majke sure every team members respect each others and there is no interruption while he speaks.
 
 ## Work Plan:
-### manage work:
+### Manage Work:
 - identify and assign tasks: The tasks will be defined equally and for everyone who excels at it.
 - completion: timly managed completion date.
-### management tool :
+### management Tool :
 - GitHub Projects.
 ## Git Process:
-### components of project will live on GitHub:
+### Components of project will live on GitHub:
 - website structure files.
-- Decumention.
-### How will you share the repository with your teammates:
+- Documention.
+### How will you share the repository with your Teammates:
 - GitHub Organization.
-### What is your Git flow:
+### Git flow:
 - Development Branch from main.
 - subbranches from development branch.
 - PR and merge after each task completion.
-### PR review workflow:
+### PR Review Workflow:
 - 1 person for review.
 - Team Leader confirm PRs.
 - everyday merge.

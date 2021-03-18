@@ -1,5 +1,5 @@
 # Team Agreement:
-Team Memmbers:
+Team Members:
 - Bayan Alkhatib
 - Ahmad Zatar
 - Ahmad Dabouqi
@@ -37,7 +37,7 @@ majke sure every team members respect each others and there is no interruption w
 - identify and assign tasks: The tasks will be defined equally and for everyone who excels at it.
 - completion: timly managed completion date.
 ### management Tool :
-- GitHub Projects.
+- Trello.
 ## Git Process:
 ### Components of project will live on GitHub:
 - website structure files.

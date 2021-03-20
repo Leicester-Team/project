@@ -19,7 +19,7 @@
     - About us page.
 
 # Semantic Versioning:
-*daily record: >>>> guide line >>>> 1.0.2 >>>>> 1 ---> major, 0 ---> minar, 2 ---> patch*
+*daily record: >>>> guide line >>>> 1.0.2 >>>>> 1 ---> major, 0 ---> minar, 2 ---> patch (bug fix)*
 
 |Version|Updates|
 |----|---|

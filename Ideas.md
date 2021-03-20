@@ -1,4 +1,4 @@
-Team Memmbers:
+Team Members:
 - Bayan Alkhatib
 - Ahmad Zatar
 - Ahmad Dabouqi

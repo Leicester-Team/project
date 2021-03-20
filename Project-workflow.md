@@ -11,6 +11,7 @@
 # Project Structure:
 
 ## home page <index> :
+``` 
 html:
     1. header
         nav
@@ -29,14 +30,14 @@ html:
             4-img
     3.footer
         &&copy
-        3iconeimg
-
+        3iconeimg 
 js:
 
-1. add listner "click " >>>> storage setitem fun.(item,event.target.id);
-2. html element to move to information page.
-
+    1. add listner "click " >>>> storage setitem fun.(item,event.target.id);
+    2. html element to move to information page.
+``` 
 ## information page:
+```
 html:
     1. header
         nav
@@ -51,12 +52,13 @@ html:
         3iconeimg
 
 js: 
- 1. vaccine constructer fun(name,company-name,country of manufacturing,tempreture,dose number, effectiveness rate,img path,price)
-2. loop for collecting data for vaccine.
-3. fun getitem localstorage selected id. 
-4. fill data inside html .
-
+    1. vaccine constructer fun(name,company-name,   country of manufacturing,tempreture,dose number, effectiveness rate,img path,price)
+    2. loop for collecting data for vaccine.
+    3. fun getitem localstorage selected id. 
+    4. fill data inside html .
+```
 ## registration page:
+```
 html:
     1. header
         nav
@@ -72,51 +74,51 @@ html:
         3iconeimg
 
 JS:
-1. constructer fun  
-    properties: form inputs
-    array && vaccine limit
+    1. constructer fun  
+        properties: form inputs
+        array && vaccine limit
 
-2. method random num (6 num){optional unique num}
-3. getitem if (data)
-4. add listner 
-    - after submit innerhtml= " "
-    vaccine limit[i]--;
-    - innerhtml : your id num and message for the user.
-5. push to constrocter fun array 
-6. setitem 
-7. 
-
+    2. method random num (6 num){optional unique num}
+    3. getitem if (data)
+    4. add listner 
+        - after submit innerhtml= " "
+        vaccine limit[i]--;
+        - innerhtml : your id num and message for the user.
+    5. push to constrocter fun array 
+    6. setitem  
+```
 ## track page:
+```
 html:
-1.form :
-[list(input, input(id)]
-2. submit button
+    1.form :
+    [list(input, input(id)]
+    2. submit button
 
 js:
-1.  grtitem local storage from registration page 
-2. add listener submit
-let index;
-    addlistener fun (if admin && second input id ==="saved id"){
-        admin();
-    }  else{ for (objectarray ){
-        if (id= object.id){
-            applicant (id)
-            index=i;
-        }
-    } 
+    1.  grtitem local storage from registration page 
+    2. add listener submit
+    let index;
+        addlistener fun (if admin && second input id ==="saved id"){
+            admin();
+        }  else{ for (objectarray ){
+            if (id= object.id){
+                applicant (id)
+                index=i;
+            }
+        } 
 
-3.  admin fun:
+    3.  admin fun:
+        main.innerhtml="";
+    add all orders in local storage into a table .
+    chart js vaccine limit
+
+    4. member fun:
     main.innerhtml="";
-add all orders in local storage into a table .
-chart js vaccine limit
-
-4. member fun:
-main.innerhtml="";
-add member information (list or p);
-map 
-
+    add member information (list or p);
+    map 
+```
 ## aboutus page:
-
+```
 html:
     1. header
         nav
@@ -130,10 +132,12 @@ html:
     3.footer
         &&copy
         3iconeimg
-
+```
 ## stretch goals:
-1. cancel oreder (member page and admin page )
-2. unique user number (registration page)
+
+> 1. cancel oreder (member page and admin page )
+> 2. unique user number (registration page)
+
 
 
 

@@ -1,4 +1,3 @@
-'use strict';
 
 let vaccineName=['Sputnik V ','AstraZeneca','mRNA-1273','BNT162b2'];
 let companyName=['Gamaleya Research Institute','Oxford University and AstraZeneca','moderna ',' pfizer and BioNTech'];
@@ -27,3 +26,5 @@ for(let i=0;i<vaccineName.length;i++){
 }
 
 console.table(Vaccine.vaccineData);
+
+localStorage.setItem('vaccine-data',JSON.stringify(Vaccine.vaccineData));

@@ -52,10 +52,10 @@ html:
         3iconeimg
 
 js: 
-    1. vaccine constructer fun(name,company-name,   country of manufacturing,tempreture,dose number, effectiveness rate,img path,price)
+    1. vaccine constructer fun(name,company-name, country of manufacturing,tempreture,dose number, effectiveness rate,img path,price)
     2. loop for collecting data for vaccine.
     3. fun getitem localstorage selected id. 
-    4. fill data inside html .
+    4. fill data inside html.
 ```
 ## registration page:
 ```

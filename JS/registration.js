@@ -39,7 +39,7 @@ function Data(name, age, phoneNumber, vaccineType, allergy){
 
 
 let arr = [];
-let amountVaccines = [5000,5000,5000,5000];
+let amountVaccines = [20,20,20,20];
 // let amountarr = localStorage.getItem('amountVaccines');
 if(localStorage.getItem('amountVaccines') === null){
   localStorage.setItem('amountVaccines' , JSON.stringify(amountVaccines));

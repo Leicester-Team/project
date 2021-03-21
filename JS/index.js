@@ -1,18 +1,21 @@
 'use strict';
 
-let div = document.getElementById("imagesDiv");
-console.log(div);
 
-div.addEventListener("click" , clickhandler);
+let vaccineImges = document.getElementById('vaccineImges');
+console.log(vaccineImges);
+
+vaccineImges.addEventListener('click' , clickhandler);
 
 function clickhandler (event){
   let imgId;
-  for(let i = 1;i <= 4;i++){
-    if (i === parseInt(event.target.title)){
-      imgId = i;
+  for(let i = 0;i<4;i++){
+    if (i === parseInt(event.target.id)){
+      imgId =i;
+      console.log(imgId);
     }
   }
   localStorage.setItem('imgId' , imgId);
-  window.location.href = "./information.html";
-  div.removeEventListener('click' , clickhandler);
+  window.location.href = './information.html';
+  vaccineImges.removeEventListener('click' , clickhandler);
+
 }

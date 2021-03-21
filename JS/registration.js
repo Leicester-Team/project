@@ -85,8 +85,6 @@ function submitholder (event){
     localStorage.setItem('users' , JSON.stringify(arr));
   }
 
-
-
   formregest.innerHTML = '';
 
   let h3 = document.createElement('h3');

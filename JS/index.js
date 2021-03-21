@@ -1,5 +1,6 @@
 'use strict';
 
+
 let vaccineImges = document.getElementById('vaccineImges');
 console.log(vaccineImges);
 
@@ -16,4 +17,5 @@ function clickhandler (event){
   localStorage.setItem('imgId' , imgId);
   window.location.href = './information.html';
   vaccineImges.removeEventListener('click' , clickhandler);
+
 }

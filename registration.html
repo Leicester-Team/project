@@ -28,37 +28,34 @@
     </header>
 
     <main>
-        <form action="registration">
+        <form action="registration" id = "form">
             <fieldset>
                 <legend></legend>
                 <label for="name">Name</label>
-                <input type="text" name="name" placeholder="Put your name" required>
+                <input type="text" name="name" id="name" placeholder="Put your name" required>
                 <label for="age">Your Age</label>
-                <input type="number" name="age" placeholder="Put your age" required>
+                <input type="number" name="age" id="age" placeholder="Put your age" required>
                 <label for="phonenum">Phone Number</label>
-                <input type="text" name="phonenum" placeholder="Put your phone number " required>
+                <input type="text" name="phonenum" id="phonenum" placeholder="Put your phone number " required>
                 <label for="vaccines">Vaccine Type</label>
-                <input list="vaccines" name="vaccinetype" required>
-                <datalist id="vaccines">
-                    <option value="Sputnik V">
-                    <option value="AstraZeneca">
-                    <option value="mRNA-1273">
-                    <option value="BNT162b2">
-                </datalist>
+                <select id="vaccines">
+                    <option value="Sputnik V" selected>Sputnik V</option>
+                    <option value="AstraZeneca">AstraZeneca</option>
+                    <option value="mRNA-1273">mRNA-1273</option>
+                    <option value="BNT162b2">BNT162b2</option>
+                </select>
 
                 <label for="alergy">Do you have an allergy ?</label>
-                <input type="radio" id="yes" name="alergy" value="yes" required>
+                <input type="radio" id="yes" name="alergy" value="yes" required checked>
                 <label for="yes">yes</label>
                 <input type="radio" id="no" name="alergy" value="no" required>
                 <label for="yes">no</label>
-                <label for="date">Date for the vaccination</label>
+                <label for="date">Birth Date</label>
                 <input type="date" id="date" name="date" required>
                 <input type="submit">
             </fieldset>
         </form>
     </main>
-
-
 
     <footer>
         &copy;

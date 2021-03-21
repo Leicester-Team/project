@@ -26,4 +26,29 @@ for(let i=0;i<vaccineName.length;i++){
   new Vaccine(vaccineName[i],companyName[i],countryofManufact[i],tempreture[i],effectivenessRate[i],imgpath[i],price[i]);
 }
 
-console.table(Vaccine.vaccineData);
+localStorage.setItem('vaccine-data',JSON.stringify(Vaccine.vaccineData));
+
+let vaccineImg=document.getElementById('vaccineImg');
+let vaccineData=document.getElementById('vaccineData');
+
+function getlocalstorage(){
+
+  let storedImgId=JSON.parse(localStorage.getItem('imgId'));
+  for( let i=0;i<vaccineName.length;i++){
+    if(storedImgId===i){
+      let storedvaccine=JSON.parse(localStorage.getItem('vaccine-data'));
+      vaccineImg.src=storedvaccine[i].imgPath;
+      let vaccinelist=document.createElement('ul');
+      vaccineData.appendChild(vaccinelist);
+      vaccinelist.innerHTML = '<li>' + 'Vaccine Name: '+storedvaccine[i].vaccineName + '</li>';
+      vaccinelist.innerHTML += '<li>' + 'Company Name: '+storedvaccine[i].companyName+ '</li>';
+      vaccinelist.innerHTML += '<li>' + 'Country of Manufacturing: '+ storedvaccine[i].countryofManufact + '</li>';
+      vaccinelist.innerHTML += '<li>' + 'Storage Tempreture: '+storedvaccine[i].tempreture + '</li>';
+      vaccinelist.innerHTML += '<li>' + 'Dose: '+storedvaccine[i].dose + '</li>';
+      vaccinelist.innerHTML += '<li>' + 'Effectiveness Rate: '+storedvaccine[i].effectivenessRate+ '</li>';
+      vaccinelist.innerHTML += '<li>' +'Price:'+storedvaccine[i].price + '</li>';
+    }
+  }
+}
+getlocalstorage();
+

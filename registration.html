@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,68 @@
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/registration.css">
 </head>
+
 <body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><img src="./img/protection (1).png" alt=""></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./registration.html">Registration</a></li>
+                <li><a href="./track.html">Order Tracking</a></li>
+                <li><a href="./aboutus.html">About-Us</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h2>Covid-19 Vaccine Registration</h2>
+        </section>
+    </header>
+
+    <main>
+        <form action="registration">
+            <fieldset>
+                <legend></legend>
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Put your name" required>
+                <label for="age">Your Age</label>
+                <input type="number" name="age" placeholder="Put your age" required>
+                <label for="phonenum">Phone Number</label>
+                <input type="text" name="phonenum" placeholder="Put your phone number " required>
+                <label for="vaccines">Vaccine Type</label>
+                <input list="vaccines" name="vaccinetype" required>
+                <datalist id="vaccines">
+                    <option value="Sputnik V">
+                    <option value="AstraZeneca">
+                    <option value="mRNA-1273">
+                    <option value="BNT162b2">
+                </datalist>
+
+                <label for="alergy">Do you have an allergy ?</label>
+                <input type="radio" id="yes" name="alergy" value="yes" required>
+                <label for="yes">yes</label>
+                <input type="radio" id="no" name="alergy" value="no" required>
+                <label for="yes">no</label>
+                <label for="date">Date for the vaccination</label>
+                <input type="date" id="date" name="date" required>
+                <input type="submit">
+            </fieldset>
+        </form>
+    </main>
+
+
+
+    <footer>
+        &copy;
+
+        <span>
+            <img src="./img/email (1).png" alt="">
+            <img src="./img/facebook (1).png" alt="">
+            <img src="./img/twitter.png" alt="">
+        </span>
+    </footer>
+
     <script src="./JS/registration.js"></script>
 </body>
+
 </html>

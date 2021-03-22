@@ -33,7 +33,7 @@ function id_num () {
 let dateInput = '';
 document.getElementById('date').addEventListener('change', function() {
   dateInput = this.value;
-  console.log(dateInput);
+
 });
 
 
@@ -123,7 +123,7 @@ function submitholder (event){
   allergyli.innerText = 'Allergy: ' + arr[arr.length-1].allergy;
   ul.appendChild(allergyli);
   let dateLi =document.createElement('li');
-  dateLi.innerText= 'Your Date of Birth: '+ arr[arr.length-1].date;
+  dateLi.innerText= 'Your Vaccine Appointment Date: '+ arr[arr.length-1].date;
   ul.appendChild(dateLi);
 
   formregest.appendChild(ul);

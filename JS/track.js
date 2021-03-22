@@ -1,5 +1,5 @@
 'use strict';
-let theadItems=['Delete Order','ID','Name','Age','Phone Number','Vaccines Type','Allergy','Date Of Birth'];
+let theadItems=['Delete Order','ID','Name','Age','Phone Number','Vaccines Type','Allergy','Vaccine Appointment Date'];
 
 
 let data = JSON.parse(localStorage.getItem('users'));
@@ -105,7 +105,7 @@ function userpage(i){
   ul.appendChild(allegli);
 
   let dateli=document.createElement('li');
-  dateli.innerText='Your Date of bairth : '+data[i].date;
+  dateli.innerText='Your Vaccine Appointment Date : '+data[i].date;
   ul.appendChild(dateli);
 
   let button =document.createElement('button');
@@ -178,35 +178,37 @@ function orderTable(){
     thead.appendChild(th);
   }
 
-  for(let i = 0;i < data.length;i++){
-    let tr = document.createElement('tr');
-    let deleteTD = document.createElement('td');
-    deleteTD.innerText = 'X';
-    deleteTD.setAttribute('id' , i);
-    deleteTD.addEventListener('click', removeOrder);
-    tr.appendChild(deleteTD);
-    let idTD = document.createElement('td');
-    idTD.innerText = data[i].id;
-    tr.appendChild(idTD);
-    let nameTD = document.createElement('td');
-    nameTD.innerText = data[i].name;
-    tr.appendChild(nameTD);
-    let ageTD = document.createElement('td');
-    ageTD.innerText = data[i].age;
-    tr.appendChild(ageTD);
-    let phoneTD = document.createElement('td');
-    phoneTD.innerText = data[i].phoneNum;
-    tr.appendChild(phoneTD);
-    let vacTD = document.createElement('td');
-    vacTD.innerText = data[i].vaccineType;
-    tr.appendChild(vacTD);
-    let allgTD = document.createElement('td');
-    allgTD.innerText = data[i].allergy;
-    tr.appendChild(allgTD);
-    let dateTD = document.createElement('td');
-    dateTD.innerText = data[i].date;
-    tr.appendChild(dateTD);
-    table.appendChild(tr);
+  if(localStorage.getItem('users') !== null){
+    for(let i = 0;i < data.length;i++){
+      let tr = document.createElement('tr');
+      let deleteTD = document.createElement('td');
+      deleteTD.innerText = 'X';
+      deleteTD.setAttribute('id' , i);
+      deleteTD.addEventListener('click', removeOrder);
+      tr.appendChild(deleteTD);
+      let idTD = document.createElement('td');
+      idTD.innerText = data[i].id;
+      tr.appendChild(idTD);
+      let nameTD = document.createElement('td');
+      nameTD.innerText = data[i].name;
+      tr.appendChild(nameTD);
+      let ageTD = document.createElement('td');
+      ageTD.innerText = data[i].age;
+      tr.appendChild(ageTD);
+      let phoneTD = document.createElement('td');
+      phoneTD.innerText = data[i].phoneNum;
+      tr.appendChild(phoneTD);
+      let vacTD = document.createElement('td');
+      vacTD.innerText = data[i].vaccineType;
+      tr.appendChild(vacTD);
+      let allgTD = document.createElement('td');
+      allgTD.innerText = data[i].allergy;
+      tr.appendChild(allgTD);
+      let dateTD = document.createElement('td');
+      dateTD.innerText = data[i].date;
+      tr.appendChild(dateTD);
+      table.appendChild(tr);
+    }
   }
   let canvas = document.createElement('canvas');
   canvas.setAttribute('id' , 'myChart');

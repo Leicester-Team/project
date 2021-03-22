@@ -135,7 +135,7 @@ html:
 ```
 ## stretch goals:
 
-> 1. cancel oreder (member page and admin page )
+> 1. cancel oreder (member page and admin page)
 > 2. unique user number (registration page)
 
 

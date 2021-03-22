@@ -150,8 +150,13 @@ function removeOrder(event){
     amount[3]++;
   }
   data.splice(deleteOrderNumber, 1);
-  localStorage.setItem('users' , JSON.stringify(data));
-  localStorage.setItem('amountVaccines' , JSON.stringify(amount));
+  if (data.length === 0){
+    localStorage.removeItem('users');
+    localStorage.setItem('amountVaccines' , JSON.stringify(amount));
+  }else{
+    localStorage.setItem('users' , JSON.stringify(data));
+    localStorage.setItem('amountVaccines' , JSON.stringify(amount));
+  }
 
   main.innerHTML='';
   orderTable();
@@ -221,9 +226,16 @@ function cancelOrder(event){
   }else if(data[cancelOrderNumber].vaccineType==='BNT162b2'){
     amount[3]++;
   }
+
   data.splice(cancelOrderNumber, 1);
-  localStorage.setItem('users' , JSON.stringify(data));
-  localStorage.setItem('amountVaccines' , JSON.stringify(amount));
+  if (data.length === 0){
+    localStorage.removeItem('users');
+    localStorage.setItem('amountVaccines' , JSON.stringify(amount));
+  }else{
+    localStorage.setItem('users' , JSON.stringify(data));
+    localStorage.setItem('amountVaccines' , JSON.stringify(amount));
+  }
+
   main.innerHTML='';
   let h1 = document.createElement('h1');
   h1.innerText='Your order has been canceled';

@@ -87,7 +87,6 @@ footer{
     margin-top: 30px;
 
 
-
 }
 
 footer section{
@@ -143,4 +142,183 @@ body{
 main{
     width: 90%;
     margin: auto;
+    
 }
+
+main form{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    height: 20vh;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: groove #0a6285 5px;
+    border-radius: 20px;
+    
+
+}
+main form input{
+    text-align: center;
+    /* height: 30%; */
+    vertical-align: middle;
+    justify-content: center;
+    height: 30%;
+    background-color: #0a6285 ;
+    color: #ffe3d8 ;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 20px;
+    border: outset #0a6285;
+   
+}
+main form input::placeholder{
+    color:#ffe3d8 ;
+}
+
+main form select{
+    width: 20%;
+    /* height: 30%; */
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    margin-right: 50px;
+    height: 30%;
+    background-color: #0a6285 ;
+    color: #ffe3d8 ;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 20px;
+    border: outset #0a6285;
+    text-align: center;
+}
+
+
+main form label{
+    color: #0a6285;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    margin-right: 30px;
+
+}
+
+#button{
+    margin-left: 30px;
+    height: 30%;
+    width: 15%;
+    border-radius: 0px;
+    border: 6px groove;
+    border-color: #0a6285;
+
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    /* border-collapse: collapse; */
+    text-align: center;
+    width: 100%;
+    border: 3px groove #0a6285;
+    font-family: 'Roboto Slab', serif;
+
+  }
+  thead{
+      font-weight: bold;
+  }
+  
+  td, th {
+    border: 2px solid #0a6285;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #bbbbbb;
+  }
+
+  tr td button{
+      font-weight: bolder;
+      color: rgb(156, 35, 35);
+      border: 2px groove #0a6285;
+
+  }
+
+  html, body {
+    height: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    flex: 1 0 auto;
+  }
+  .footer {
+    flex-shrink: 0;
+  }
+
+
+main section{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+main article{
+    width: 50%;
+    float: right;
+    text-align: center;
+    border:3px outset #0a6285;
+}
+
+main section h2{
+    color: #0a6285;
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+main section li{
+    color: #0a6285;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 30px;
+    text-align: left;
+    margin-left: 150px;
+    list-style-type: circle;
+}
+
+main section button{
+    color: #0a6285;
+    font-family: sans-serif;
+    width: 20%;
+    height: 50px;
+    border: 6px groove;
+    border-color: #0a6285;
+    border-radius: 5px;
+
+}
+
+
+main h2{
+    color: #0a6285;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+}
+
+main div{
+
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+
+
+
+

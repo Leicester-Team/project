@@ -1,7 +1,8 @@
 'use strict';
 let theadItems=['Delete Order','ID','Name','Age','Phone Number','Vaccines Type','Allergy','Vaccine Appointment Date'];
 
-
+let section =document.createElement('section');
+let article = document.createElement('article');
 let data = JSON.parse(localStorage.getItem('users'));
 let amount = JSON.parse(localStorage.getItem('amountVaccines'));
 let form = document.getElementById('form');
@@ -18,7 +19,6 @@ function submitHolder(event){
   }else if(parseInt(userSelected)===1){
     if(parseInt(Oredernumber)===999){
       orderTable();
-      alert('Welcome To Admin Page');
 
     }else if(!Oredernumber){
       alert('Please put the user id');
@@ -31,7 +31,7 @@ function submitHolder(event){
     }else{
       for(let i=0;i<data.length;i++){
         if(parseInt(Oredernumber)===data[i].id){
-          alert('Welcome '+ data[i].name);
+
           userpage(i);
           break;
         }else if(i===data.length-1 && parseInt(Oredernumber)!==data[i].id){
@@ -54,9 +54,9 @@ function chartFunction() {
     data: {
       labels: ['Sputnik V', 'AstraZeneca', 'mRNA-1273', 'BNT162b2'],
       datasets: [{
-        label: 'My First dataset',
-        backgroundColor: 'rgb(255, 99, 132)',
-        borderColor: 'rgb(255, 99, 132)',
+        label: 'The amount of the vaccine',
+        backgroundColor: 'rgb(10,98,133)',
+        borderColor: 'rgb(10,98,133)',
         data: amount
       }]
     },
@@ -69,20 +69,32 @@ function chartFunction() {
             max:20,
             min:0,
             stepSize: 1,
+            fontColor: 'black',
+            fontSize: 14,
           }
-        }]
+        }],
+        xAxes: [{
+          ticks: {
+            fontColor: 'black',
+            fontSize: 14,},
+          barPercentage: 0.4
+        }],
       }
     }
   });
 }
 
+// scales: {    xAxes: [{    ticks: {    fontColor: 'white',    fontSize: 14,             }
+
+
 function userpage(i){
   main.innerHTML='';
   let ul=document.createElement('ul');
   let h2=document.createElement('h2');
-  h2.innerText='User Page';
-  main.appendChild(h2);
-  main.appendChild(ul);
+  h2.innerText='Your Order';
+  main.appendChild(section);
+  section.appendChild(h2);
+  section.appendChild(ul);
 
   let nameli=document.createElement('li');
   nameli.innerText='Your Name: '+data[i].name;
@@ -112,7 +124,7 @@ function userpage(i){
   button.innerText='Cancel Order';
   button.addEventListener('click',cancelOrder);
   button.setAttribute('id' , i);
-  main.appendChild(button);
+  section.appendChild(button);
 
 
   if(data[i].vaccineType ==='Sputnik V' || data[i].vaccineType ==='AstraZeneca'){
@@ -123,7 +135,8 @@ function userpage(i){
     iframe.setAttribute('style' , 'border:0');
     iframe.setAttribute('allowfullscreen' , '');
     iframe.setAttribute('loading' , 'lazy');
-    main.appendChild(iframe);
+    main.appendChild(article);
+    article.appendChild(iframe);
   }
   else {
     let iframe = document.createElement('iframe');
@@ -133,7 +146,8 @@ function userpage(i){
     iframe.setAttribute('style' , 'border:0');
     iframe.setAttribute('allowfullscreen' , '');
     iframe.setAttribute('loading' , 'lazy');
-    main.appendChild(iframe);
+    main.appendChild(article);
+    section.appendChild(iframe);
   }
 }
 
@@ -166,11 +180,12 @@ function orderTable(){
 
 
   main.innerHTML='';
-  let section = document.createElement('section');
-  main.appendChild(section);
+  let h2=document.createElement('h2');
+  h2.innerText='Admin Page';
+  main.appendChild(h2);
   let table = document.createElement('table');
   let thead = document.createElement('thead');
-  section.appendChild(table);
+  main.appendChild(table);
   table.appendChild(thead);
   for(let i=0;i<theadItems.length;i++){
     let th = document.createElement('th');
@@ -182,10 +197,12 @@ function orderTable(){
     for(let i = 0;i < data.length;i++){
       let tr = document.createElement('tr');
       let deleteTD = document.createElement('td');
-      deleteTD.innerText = 'X';
-      deleteTD.setAttribute('id' , i);
-      deleteTD.addEventListener('click', removeOrder);
+      let button = document.createElement('button');
+      button.innerText = 'Delete';
+      button.setAttribute('id' , i);
+      button.addEventListener('click', removeOrder);
       tr.appendChild(deleteTD);
+      deleteTD.appendChild(button);
       let idTD = document.createElement('td');
       idTD.innerText = data[i].id;
       tr.appendChild(idTD);
@@ -212,7 +229,9 @@ function orderTable(){
   }
   let canvas = document.createElement('canvas');
   canvas.setAttribute('id' , 'myChart');
-  main.appendChild(canvas);
+  let div = document.createElement('div');
+  main.appendChild(div);
+  div.appendChild(canvas);
   chartFunction();
 
 }
@@ -244,3 +263,4 @@ function cancelOrder(event){
   main.appendChild(h1);
 
 }
+

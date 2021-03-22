@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Order Tracking</title>
   <link rel="stylesheet" href="CSS/reset.css">
   <link rel="stylesheet" href="CSS/track.css">
 </head>
@@ -28,11 +28,11 @@
   </header>
 
 
-  <main id="main">
+  <main class="content" id="main">
     <form id="form">
       <label for="user_type_list">User Type: </label>
       <select name="user_type_list" id="">
-        <option value="0">--Choose user type--</option>
+        <option value="0">Choose user type</option>
         <option value="1">Admin</option>
         <option value="2">Applicant</option>
       </select>
@@ -40,14 +40,14 @@
       <label for="id">User ID: </label>
       <input type="text" name="id" placeholder="Enter your ID">
 
-      <input type="submit" value="Login">
+      <input id="button" type="submit" value="Login">
       
     </form>
   </main>
 
 
 
-  <footer>
+  <footer class="footer">
     <div>
        <h2>&copy Covid-19 Vaccine Registration</h2> 
     </div>

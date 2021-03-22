@@ -144,3 +144,57 @@ main{
     width: 90%;
     margin: auto;
 }
+
+main h1{
+    color: #ffe3d8;
+    font-weight: bold;
+    background-color:#0a6285;
+    font-size:30px ;
+    display: inline-block;
+    padding:25px;
+    text-align:center;
+    margin-left:35%;
+    margin-bottom:35px;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+}
+
+main section div{
+    display:inline-block;
+    width:45%;
+    margin:auto;
+    text-align:center;
+    position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+main section div:hover{
+    transform: rotateY(180deg);
+}
+
+main section div img,main section div ul{
+-webkit-backface-visibility: hidden; 
+backface-visibility: hidden;
+}
+
+main section div img{
+    width: 300px;
+    height:300px;
+    border-radius:50%;  
+}
+
+main section div ul{
+transform: rotateY(180deg);
+width: 300px;
+height:300px;
+ border-radius:50%;
+ vertical-align:middle;
+ background-color:#0a6285;
+
+}
+
+
+
+
+

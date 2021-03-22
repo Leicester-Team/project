@@ -57,7 +57,6 @@ header section{
     width: 100%;
     background-size: 100%;
     background-image: url("../img/home-banner.jpg");
-    /* background-size:cover ; */
     background-repeat: no-repeat;
     padding: 120px;
     position: relative;
@@ -143,4 +142,93 @@ body{
 main{
     width: 90%;
     margin: auto;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+main figure{
+    display: inline-block;
+    width: 20%;
+    height: 236.5px;
+    margin-right: 4.5%;
+    margin-top: 20px;
+    border:groove 3px #0a6285;
+    border-radius: 5px;
+    background-color: #F9F2F3;
+    
+}
+figure:hover {
+    cursor:pointer;
+    transform: scale(1.02);
+}
+
+figure img{
+    width: 100%; 
+    margin-bottom: 0px;
+}
+figure figcaption{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    color: #0a6285;
+}
+
+#div1 {
+    text-align: left;
+    width: 95%;
+    border: solid 3px #0a6285 ;
+    border-radius: 5px;
+    padding: 10px;
+    line-height: 25px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#div1 h1{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+div div {
+    border-radius: 5px;
+    width: 30%;
+    margin-right: 2%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    height: 500px;
+    float: left;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+div img{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+div h2{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: large;
+    color : #0a6285;
+}
+
+div li {
+    list-style-type: disc;
+    color : #0a6285;
+    text-align: -webkit-match-parent;
+    font-size: medium;
+    width: 80%;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    
+}
+
+#main_div_information {
+    padding-top: 0px;
+    height: 500px;
 }

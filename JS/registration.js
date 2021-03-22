@@ -1,14 +1,31 @@
 'use strict';
-
+let users = JSON.parse(localStorage.getItem('users'));
 
 let allergyV = '';
+
+
 
 function random_ID (){
   let num  = Math.floor(Math.random() * (9999999 - 1000000 +1)+1000000);
   return num;
 }
 
+function id_num () {
+  let num = random_ID();
+  if(localStorage.getItem('users') === null){
+    return num;
+  }else{
+    for (let i = 0;i <users.length;i++){
+      if (num === users[i].id){
+        num =random_ID();
+        i = 0;
+      }else{
+        return num;
+      }
+    }
+  }
 
+}
 
 
 
@@ -25,7 +42,7 @@ document.getElementById('date').addEventListener('change', function() {
 let formregest = document.getElementById('form');
 
 function Data(name, age, phoneNumber, vaccineType, allergy){
-  this.id = random_ID();
+  this.id = id_num();
   this.name = name;
   this.age = age;
   this.phoneNum = phoneNumber;
@@ -40,7 +57,6 @@ function Data(name, age, phoneNumber, vaccineType, allergy){
 
 let arr = [];
 let amountVaccines = [20,20,20,20];
-// let amountarr = localStorage.getItem('amountVaccines');
 if(localStorage.getItem('amountVaccines') === null){
   localStorage.setItem('amountVaccines' , JSON.stringify(amountVaccines));
 }else{
@@ -113,4 +129,3 @@ function submitholder (event){
   formregest.appendChild(ul);
 
 }
-

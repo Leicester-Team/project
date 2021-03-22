@@ -144,3 +144,33 @@ main{
     width: 90%;
     margin: auto;
 }
+
+main img{
+    border:#03506f  solid  4px;
+    border-radius:20px;
+    border-style:outset;
+    width:30%;
+    height: 450px;
+}
+main div {
+    width:60%;
+    display:inline-block;
+    vertical-align:top;
+    margin-left:50px;
+    border: #03506f  solid  4px; ;
+    border-style: ridge;
+    border-top-left-radius:15px ;
+    border-bottom-right-radius: 15px;
+    height:450px ;
+}
+
+main div li{
+    height:5vh;
+    font-size: larger;
+    padding:30px;
+    text-decoration: wavy;
+    color:#053344;
+    text-shadow:#03506f;
+    font-weight: bolder;
+    
+}

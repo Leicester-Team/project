@@ -2,7 +2,7 @@
 
 let vaccineName=['Sputnik V ','AstraZeneca','mRNA-1273','BNT162b2'];
 let companyName=['Gamaleya Research Institute','Oxford University and AstraZeneca','moderna ',' pfizer and BioNTech'];
-let countryofManufact=['Russian','UK','US',' Germany'];
+let countryofManufact=['Russian','United Kingdom','United States','United States'];
 let tempreture=['2-8 C','2-8 C','-20 C','-70 C'];
 let effectivenessRate=['92%','70%-90%','95%','95 %'];
 let imgpath=['Gam-COVID_Vac','AstraZeneca','moderna','bnt162'];

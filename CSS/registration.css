@@ -109,8 +109,8 @@ footer section img{
     right:15px;
     margin-right:20px;
     cursor: pointer;
-
 }
+
 footer section img:hover{
     transform: scale(2);
 }
@@ -125,7 +125,6 @@ footer div{
 }
 
 footer div h2{
-
     font-family: 'Roboto Slab', serif;
     color: #ffe3d8;
     float:left;
@@ -143,4 +142,78 @@ body{
 main{
     width: 90%;
     margin: auto;
+    margin-left: 10%;
+}
+
+#form{
+    display: block;
+    margin-top: 6px;
+    padding: 10px;
+    background-color: rgb(255, 237, 211);
+    border:2px solid rgb(146, 127, 127) ;
+    border-radius: 5px;
+    width: 90%;
+}
+
+main p {
+    margin-top: 4px;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+input[type=text],input[type=number],input[type=date] ,select,span {
+    font-family: 'Roboto Slab', serif;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(204, 204, 204);
+    box-sizing: border-box;
+    border-bottom: 2px solid rgb(109, 102, 102);
+    background-color: rgb(255, 251, 251);
+    border-radius:10px;
+}
+
+input[type=text]:focus,input[type=number]:focus,input[type=date]:focus, select:focus {
+    border: 3px solid #555;
+}
+
+input[type=submit]{
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    width: 25%;
+    background-color: #DEDFE0;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    cursor: pointer;
+    margin-left: 38%;
+    font-weight: bolder;
+    height: 35px;
+    border-radius: 5px;;
+}
+  
+input[type=submit]:hover {
+    background-color: #3584A3;
+}
+
+main span input{
+    margin-right: 15px;
+}
+
+.alergy{
+    width: 50%;
+    padding-right: 150px;
+   margin-bottom:30px;
+}
+
+#y ,#n {
+    margin-left: -13px;
+    margin-right: 10px;;
+}
+
+label{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
 }

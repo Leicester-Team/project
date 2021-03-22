@@ -3,8 +3,6 @@ let users = JSON.parse(localStorage.getItem('users'));
 
 let allergyV = '';
 
-
-
 function random_ID (){
   let num  = Math.floor(Math.random() * (9999999 - 1000000 +1)+1000000);
   return num;
@@ -28,16 +26,11 @@ function id_num () {
 }
 
 
-
-
 let dateInput = '';
 document.getElementById('date').addEventListener('change', function() {
   dateInput = this.value;
 
 });
-
-
-
 
 let formregest = document.getElementById('form');
 
@@ -49,11 +42,7 @@ function Data(name, age, phoneNumber, vaccineType, allergy){
   this.date = dateInput;
   this.vaccineType = vaccineType;
   this.allergy = allergy;
-
-
 }
-
-
 
 let arr = [];
 let amountVaccines = [20,20,20,20];
@@ -101,8 +90,6 @@ function submitholder (event){
     localStorage.setItem('users' , JSON.stringify(arr));
   }
 
-
-
   formregest.innerHTML = '';
 
   let h3 = document.createElement('h3');
@@ -129,5 +116,4 @@ function submitholder (event){
   ul.appendChild(dateLi);
 
   formregest.appendChild(ul);
-
 }

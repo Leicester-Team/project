@@ -93,7 +93,7 @@ function submitholder (event){
   formregest.innerHTML = '';
 
   let h3 = document.createElement('h3');
-  h3.innerText = 'Thank you '+ arr[arr.length-1].name +' for your registration';
+  h3.innerText = 'Thank you '+ arr[arr.length-1].name +' for your registration..';
   formregest.appendChild(h3);
   let ul = document.createElement('ul');
   let idli = document.createElement('li');

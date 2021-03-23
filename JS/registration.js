@@ -27,9 +27,8 @@ function id_num () {
 
 
 let dateInput = '';
-document.getElementById('date').addEventListener('change', function() {
+document.getElementById('date').addEventListener('change', function(){
   dateInput = this.value;
-
 });
 
 let formregest = document.getElementById('form');

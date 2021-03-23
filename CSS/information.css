@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+nav{
+    width: 100%;
+    background-color: #0a6285 ;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 70px;
+}
+
+nav li{
+    width: 20%;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    vertical-align:middle;
+    justify-content: center;
+    height: 70px;
+    font-family: 'Roboto Slab', serif;
+    border: groove #12759c 3px;
+    border-radius: 5px;
+    cursor: pointer;    
+}
+
+nav li:hover{
+    background-color: #03506f;
+}
+
+nav li img{
+    align-self: center;
+    height: 50px;
+    width: 50px;
+}
+
+nav a{
+    color: #ffe3d8;
+    text-decoration: none;
+    align-self: center;
+}
+
+header section{
+    width: 100%;
+    background-size: 100%;
+    background-image: url("../img/home-banner.jpg");
+    background-repeat: no-repeat;
+    padding: 120px;
+    position: relative;
+    z-index: 0;
+    margin-top: 70px;   
+}
+
+header section h2{
+    background-color:#0a6285 ;
+    float:left;
+    padding: 20px 50px;
+    font-size:30px;
+    color:white;  
+    position:absolute;
+    left:0;
+    bottom:50px;
+    opacity: 0.85;
+    font-family: 'Roboto Slab', serif;
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: #0a6285;
+    border: groove #12759c 3px;
+    margin-top: 30px;
+}
+
+footer section{
+    width: 50%;
+    float: right;
+    text-align: center;
+    height: 100%;
+    vertical-align:middle;
+    justify-content: center;
+}
+
+footer section img{
+    height: 30px;
+    width: 30px;
+    float:right;
+    position:relative;
+    top:15px;
+    right:15px;
+    margin-right:20px;
+    cursor: pointer;
+}
+
+footer section img:hover{
+    transform: scale(2);
+}
+
+footer div{
+    width: 50%;
+    float:left;
+    text-align: center;
+    height: 100%;
+    vertical-align:middle;
+    justify-content: center;
+}
+
+footer div h2{
+    font-family: 'Roboto Slab', serif;
+    color: #ffe3d8;
+    float:left;
+    position:relative;
+    top:20px;
+    left:15px;
+    margin-left:20px;
+}
+
+body{
+    background-color: #f3f4ed;
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+main img{
+    border:#03506f  solid  4px;
+    border-radius:20px;
+    border-style:outset;
+    width:30%;
+    height: 450px;
+}
+
+main div {
+    width:60%;
+    display:inline-block;
+    vertical-align:top;
+    margin-left:50px;
+    border: #03506f  solid  4px; ;
+    border-style: ridge;
+    border-top-left-radius:15px ;
+    border-bottom-right-radius: 15px;
+    height:450px ;
+}
+
+main div li{
+    height:5vh;
+    font-size: larger;
+    padding:30px;
+    text-decoration: wavy;
+    color:#053344;
+    text-shadow:#03506f;
+    font-weight: bolder;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+#title{
+    font-size:50px ;
+    font-family: 'Train One', cursive;
+    color: #DEDFE0;
+}
+
+header ul li:first-of-type{
+    cursor: auto;
+}
+
+header ul li:first-of-type:hover{
+    background-color:#0a6285 ;
+}

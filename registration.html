@@ -5,21 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration</title>
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/registration.css">
 </head>
 
 <body>
-
     <header>
         <nav>
             <ul>
-                <li><img src="./img/protection (1).png" alt=""></li>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./registration.html">Registration</a></li>
-                <li><a href="./track.html">Order Tracking</a></li>
-                <li><a href="./aboutus.html">About-Us</a></li>
+                <li><img src="./img/vaccine (1).png" alt=""><a id="title">VR</a></li>
+                <li id="home"><a href="./index.html">Home</a></li>
+                <li id="reg"><a href="./registration.html">Registration</a></li>
+                <li id="track"><a href="./track.html">Order Tracking</a></li>
+                <li id="about"><a href="./aboutus.html">About-Us</a></li>
             </ul>
         </nav>
         <section>
@@ -27,16 +26,15 @@
         </section>
     </header>
 
-    <main>
-        <form action="registration" id = "form">
-            <fieldset>
-                <legend></legend>
+    <main id="main" class="content">
+        <p>Here You Can Register..</p>
+        <form action="registration" id="form">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Put your name" required>
+                <input autocomplete="off" type="text" name="name" id="name" placeholder="Insert your name" required><br>
                 <label for="age">Your Age</label>
-                <input type="number" name="age" id="age" placeholder="Put your age" required>
+                <input autocomplete="off" type="number" name="age" id="age" placeholder="Insert your age" required><br>
                 <label for="phonenum">Phone Number</label>
-                <input type="text" name="phonenum" id="phonenum" placeholder="Put your phone number " required>
+                <input autocomplete="off" type="text" name="phonenum" id="phonenum" placeholder="Insert your phone number " required> <br>
                 <label for="vaccines">Vaccine Type</label>
                 <select id="vaccines">
                     <option value="Sputnik V" selected>Sputnik V</option>
@@ -44,29 +42,35 @@
                     <option value="mRNA-1273">mRNA-1273</option>
                     <option value="BNT162b2">BNT162b2</option>
                 </select>
-
-                <label for="alergy">Do you have an allergy ?</label>
+                <br>
+                
+                <label for="alergy" class="alergy">Do you have an allergy ?</label>
+            <br>
+                <span>
                 <input type="radio" id="yes" name="alergy" value="yes" required checked>
-                <label for="yes">yes</label>
+                <label for="yes" id="y">yes</label>
                 <input type="radio" id="no" name="alergy" value="no" required>
-                <label for="yes">no</label>
-                <label for="date">Birth Date</label>
-                <input type="date" id="date" name="date" required>
+                <label for="no" id="n">no</label>
+                </span>
+                
+                <br>
+                <label for="date">Vaccine Appointment Date</label>
+                <input type="date" id="date" name="date" required><br>
                 <input type="submit">
-            </fieldset>
         </form>
     </main>
 
-    <footer>
-        &copy;
-
-        <span>
-            <img src="./img/email (1).png" alt="">
-            <img src="./img/facebook (1).png" alt="">
+    <footer class="footer">
+        <div>
+           <h2>&copy Covid-19 Vaccine Registration</h2> 
+        </div>
+        
+        <section>
+            <img src="./img/email.png" alt="">
+            <img src="./img/facebook  .png" alt="">
             <img src="./img/twitter.png" alt="">
-        </span>
+        </section>
     </footer>
-
     <script src="./JS/registration.js"></script>
 </body>
 

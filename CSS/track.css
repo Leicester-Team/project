@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+nav{
+    width: 100%;
+    background-color: #0a6285 ;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 70px;
+}
+
+nav li{
+    width: 20%;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    vertical-align:middle;
+    justify-content: center;
+    height: 70px;
+    font-family: 'Roboto Slab', serif;
+    border: groove #12759c 3px;
+    border-radius: 5px;
+    cursor: pointer;    
+}
+
+nav li:hover{
+    background-color: #03506f;
+}
+
+nav li img{
+    align-self: center;
+    height: 50px;
+    width: 50px;
+}
+
+nav a{
+    color: #ffe3d8;
+    text-decoration: none;
+    align-self: center;
+}
+
+header section{
+    width: 100%;
+    background-size: 100%;
+    background-image: url("../img/home-banner.jpg");
+    background-repeat: no-repeat;
+    padding: 120px;
+    position: relative;
+    z-index: 0;
+    margin-top: 70px;   
+}
+
+header section h2{
+    background-color:#0a6285 ;
+    float:left;
+    padding: 20px 50px;
+    font-size:30px;
+    color:white;  
+    position:absolute;
+    left:0;
+    bottom:50px;
+    opacity: 0.85;
+    font-family: 'Roboto Slab', serif;
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: #0a6285;
+    border: groove #12759c 3px;
+    margin-top: 30px;
+}
+
+footer section{
+    width: 50%;
+    float: right;
+    text-align: center;
+    height: 100%;
+    vertical-align:middle;
+    justify-content: center;
+}
+
+footer section img{
+    height: 30px;
+    width: 30px;
+    float:right;
+    position:relative;
+    top:15px;
+    right:15px;
+    margin-right:20px;
+    cursor: pointer;
+}
+
+footer section img:hover{
+    transform: scale(2);
+}
+
+footer div{
+    width: 50%;
+    float:left;
+    text-align: center;
+    height: 100%;
+    vertical-align:middle;
+    justify-content: center;
+}
+
+footer div h2{
+    font-family: 'Roboto Slab', serif;
+    color: #ffe3d8;
+    float:left;
+    position:relative;
+    top:20px;
+    left:15px;
+    margin-left:20px;
+}
+
+body{
+    background-color: #f3f4ed;
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+main form{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    height: 20vh;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: groove #0a6285 5px;
+    border-radius: 20px;
+    background-color: #F9F2F3;
+}
+main form input{
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    height: 30%;
+    background-color: #0a6285 ;
+    color: #ffe3d8 ;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 0px;
+    border: inset #063c52;
+    border-radius: 20px;
+}
+
+main form input::placeholder{
+    color:#ffe3d8 ;
+}
+
+main form select{
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    margin-right: 50px;
+    height: 30%;
+    background-color: #0a6285 ;
+    color: #ffe3d8 ;
+    font-family: 'Roboto Slab', serif;
+    border: inset #063c52;
+    text-align: center;
+    border-radius: 20px;
+}
+
+main form label{
+    color: #0a6285;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+#button{
+    margin-left: 30px;
+    height: 30%;
+    width: 15%;
+    border-radius: 0px;
+    border: 6px groove;
+    border-color: #0a6285;
+}
+
+table {
+    font-family: arial, sans-serif;
+    text-align: center;
+    width: 100%;
+    border: 3px groove #0a6285;
+    font-family: 'Roboto Slab', serif;
+}
+
+thead{
+    font-weight: bold;
+}
+  
+td, th {
+    border: 2px solid #0a6285;
+    text-align: center;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #bbbbbb;
+}
+
+tr td button{
+    font-weight: bolder;
+    color: rgb(156, 35, 35);
+    border: 2px groove #0a6285;
+
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+main section{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+main article{
+    width: 50%;
+    float: right;
+    text-align: center;
+    border:3px outset #0a6285;
+}
+
+main section h2{
+    color: #0a6285;
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+main section li{
+    color: #0a6285;
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 30px;
+    text-align: left;
+    margin-left: 150px;
+    list-style-type: circle;
+}
+
+main section button{
+    color: #0a6285;
+    font-family: sans-serif;
+    width: 20%;
+    height: 50px;
+    border: 6px groove;
+    border-color: #0a6285;
+    border-radius: 5px;
+}
+
+main h2{
+    color: #0a6285;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+main div{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+#title{
+    font-size:50px ;
+    font-family: 'Train One', cursive;
+    color: #DEDFE0;
+}
+
+header ul li:first-of-type{
+    cursor: auto;
+}
+
+header ul li:first-of-type:hover{
+    background-color:#0a6285 ;
+
+}
+
+input:active,input:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+select:active,select:focus{
+    outline: none;
+    box-shadow: none;
+}

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About-Us</title>
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/aboutus.css">
 
@@ -16,11 +16,11 @@
     <header>
         <nav>
             <ul>
-                <li><img src="./img/protection (1).png" alt=""></li>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./registration.html">Registration</a></li>
-                <li><a href="./track.html">Order Tracking</a></li>
-                <li><a href="./aboutus.html">About-Us</a></li>
+                <li><img src="./img/vaccine (1).png" alt=""><a id="title">VR</a></li>
+                <li id="home"><a href="./index.html">Home</a></li>
+                <li id="reg"><a href="./registration.html">Registration</a></li>
+                <li id="track"><a href="./track.html">Order Tracking</a></li>
+                <li id="about"><a href="./aboutus.html">About-Us</a></li>
             </ul>
         </nav>
         <section>
@@ -29,38 +29,35 @@
     </header>
   
   
-   <main>
-       <h1> Leicester Team </h1>
+   <main class="content">
+     <article><h1> Leicester Team </h1></article>  
        <section>
-           <div>
+
+           <div id="div1">  
             <img src="./img/ahmadzatar.jpeg" alt="">
             <ul>
-                <li>Ahmad Zatar </li>
-                <li><a href="https://github.com/AhmedZatar">GitHub</a></li>
+                <li class="img"><a target="_blank" href="https://github.com/AhmedZatar"><img src="./img/github.png" alt=""> </a><h3>Ahmad Zatar</h3></li>
             </ul>
            </div>
           
-           <div>
+           <div id="div2">
             <img src="./img/ahmadaldabouqi.jpeg" alt="">
             <ul>
-                <li>Ahmad AlDabouqi </li>
-                <li><a href="https://github.com/ahmadaldabouqii">GitHub</a></li>
+                <li class="img"><a target="_blank" href="https://github.com/ahmadaldabouqii"><img src="./img/github.png" alt=""> </a><h3>Ahmad AlDabouqi</h3> </li>
             </ul>
            </div>
 
-           <div>
+           <div id="div3">
             <img src="./img/bayanalklhatib.jpeg" alt="">
             <ul>
-                <li>Bayan Alkhatib </li>
-                <li><a href="https://github.com/bayan-alkhatib">GitHub</a></li>
+                <li class="img"><a target="_blank" href="https://github.com/bayan-alkhatib"><img src="./img/github.png" alt=""></a><h3>Bayan Alkhatib</h3></li>
             </ul>
            </div>
 
-           <div>
+           <div id="div4">
             <img src="./img/ebrahimayyad.jpeg" alt="">
             <ul>
-                <li>Ebrahim Ayaad</li>
-                <li><a href="https://github.com/ebrahimayyad11">GitHub</a></li>
+                <li class="img"><a target="_blank" href="https://github.com/ebrahimayyad11"><img src="./img/github.png" alt=""> </a><h3>Ebrahim Ayaad</h3></li>
             </ul>
            </div>
        </section>
@@ -68,17 +65,19 @@
 
     
 
-    <footer>
-        &copy;
+   <footer class="footer">
+    <div>
+       <h2>&copy Covid-19 Vaccine Registration</h2> 
+    </div>
+    
+    <section>
+        <img src="./img/email.png" alt="">
+        <img src="./img/facebook  .png" alt="">
+        <img src="./img/twitter.png" alt="">
+    </section>
+</footer>
 
-        <span>
-            <img src="./img/email (1).png" alt="">
-            <img src="./img/facebook (1).png" alt="">
-            <img src="./img/twitter.png" alt="">
-        </span>
-    </footer>
-
-
+<script src="./JS/about.js"></script>
 </body>
 
 </html>

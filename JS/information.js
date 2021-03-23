@@ -2,7 +2,7 @@
 
 let vaccineName=['Sputnik V ','AstraZeneca','mRNA-1273','BNT162b2'];
 let companyName=['Gamaleya Research Institute','Oxford University and AstraZeneca','moderna ',' pfizer and BioNTech'];
-let countryofManufact=['Russian','UK','US',' Germany'];
+let countryofManufact=['Russian','United Kingdom','United States','United States'];
 let tempreture=['2-8 C','2-8 C','-20 C','-70 C'];
 let effectivenessRate=['92%','70%-90%','95%','95 %'];
 let imgpath=['Gam-COVID_Vac','AstraZeneca','moderna','bnt162'];
@@ -52,3 +52,26 @@ function getlocalstorage(){
 }
 getlocalstorage();
 
+let home= document.getElementById('home');
+home.addEventListener('click',clickHome);
+function clickHome(){
+  window.location.href = './index.html';
+}
+
+let reg= document.getElementById('reg');
+reg.addEventListener('click',clickReg);
+function clickReg(){
+  window.location.href = './registration.html';
+}
+
+let track= document.getElementById('track');
+track.addEventListener('click',clickTrack);
+function clickTrack(){
+  window.location.href = './track.html';
+}
+
+let about= document.getElementById('about');
+about.addEventListener('click',clickAbout);
+function clickAbout(){
+  window.location.href = './aboutus.html';
+}

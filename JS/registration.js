@@ -1,5 +1,5 @@
 'use strict';
-
+let users = JSON.parse(localStorage.getItem('users'));
 
 let allergyV = '';
 
@@ -8,39 +8,44 @@ function random_ID (){
   return num;
 }
 
+function id_num () {
+  let num = random_ID();
+  if(localStorage.getItem('users') === null){
+    return num;
+  }else{
+    for (let i = 0;i <users.length;i++){
+      if (num === users[i].id){
+        num =random_ID();
+        i = 0;
+      }else{
+        return num;
+      }
+    }
+  }
 
-
-
+}
 
 
 let dateInput = '';
 document.getElementById('date').addEventListener('change', function() {
   dateInput = this.value;
-  console.log(dateInput);
+
 });
-
-
-
 
 let formregest = document.getElementById('form');
 
 function Data(name, age, phoneNumber, vaccineType, allergy){
-  this.id = random_ID();
+  this.id = id_num();
   this.name = name;
   this.age = age;
   this.phoneNum = phoneNumber;
   this.date = dateInput;
   this.vaccineType = vaccineType;
   this.allergy = allergy;
-
-
 }
-
-
 
 let arr = [];
 let amountVaccines = [20,20,20,20];
-// let amountarr = localStorage.getItem('amountVaccines');
 if(localStorage.getItem('amountVaccines') === null){
   localStorage.setItem('amountVaccines' , JSON.stringify(amountVaccines));
 }else{
@@ -84,13 +89,14 @@ function submitholder (event){
     arr.push(userData);
     localStorage.setItem('users' , JSON.stringify(arr));
   }
+  let main =document.getElementById('main');
 
-
-
-  formregest.innerHTML = '';
+  main.innerHTML = '';
+  formregest.innerHTML='';
+  main.appendChild(formregest);
 
   let h3 = document.createElement('h3');
-  h3.innerText = 'Thank you '+ arr[arr.length-1].name +' for your registration';
+  h3.innerText = 'Thank you '+ arr[arr.length-1].name +' for your registration..';
   formregest.appendChild(h3);
   let ul = document.createElement('ul');
   let idli = document.createElement('li');
@@ -109,10 +115,32 @@ function submitholder (event){
   allergyli.innerText = 'Allergy: ' + arr[arr.length-1].allergy;
   ul.appendChild(allergyli);
   let dateLi =document.createElement('li');
-  dateLi.innerText= 'Your Date of Birth: '+ arr[arr.length-1].date;
+  dateLi.innerText= 'Your Vaccine Appointment Date: '+ arr[arr.length-1].date;
   ul.appendChild(dateLi);
 
   formregest.appendChild(ul);
-
 }
 
+let home= document.getElementById('home');
+home.addEventListener('click',clickHome);
+function clickHome(){
+  window.location.href = './index.html';
+}
+
+let reg= document.getElementById('reg');
+reg.addEventListener('click',clickReg);
+function clickReg(){
+  window.location.href = './registration.html';
+}
+
+let track= document.getElementById('track');
+track.addEventListener('click',clickTrack);
+function clickTrack(){
+  window.location.href = './track.html';
+}
+
+let about= document.getElementById('about');
+about.addEventListener('click',clickAbout);
+function clickAbout(){
+  window.location.href = './aboutus.html';
+}

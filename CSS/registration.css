@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
 *{
     box-sizing: border-box;
 }
@@ -217,7 +218,6 @@ label{
 }
 
 form ul li {
-
     font-family: 'Roboto Slab', serif;
     margin-bottom: 20px;
     font-size: medium;
@@ -240,6 +240,7 @@ body {
 .footer {
     flex-shrink: 0;
 }
+
 #title{
     font-size:50px ;
     font-family: 'Train One', cursive;
@@ -250,12 +251,13 @@ form h3{
     margin-top:10px ;
     margin-bottom: 30px;
 }
+
 header ul li:first-of-type{
     cursor: auto;
 }
+
 header ul li:first-of-type:hover{
     background-color:#0a6285 ;
-
 }
 
 input:active,input:focus{

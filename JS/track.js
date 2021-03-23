@@ -147,7 +147,7 @@ function userpage(i){
     iframe.setAttribute('allowfullscreen' , '');
     iframe.setAttribute('loading' , 'lazy');
     main.appendChild(article);
-    section.appendChild(iframe);
+    article.appendChild(iframe);
   }
 }
 

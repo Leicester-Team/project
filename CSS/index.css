@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
 *{
     box-sizing: border-box;
 }
@@ -202,10 +203,11 @@ div div {
 
 
 div img{
-    width: 100%;
+    width: 50%;
     height: 200px;
     margin-bottom: 20px;
     margin-top: 0px;
+    text-align: center;
 }
 
 div h2{
@@ -231,4 +233,9 @@ div li {
 #main_div_information {
     padding-top: 0px;
     height: 500px;
+}
+#title{
+    font-size:50px ;
+    font-family: 'Train One', cursive;
+    color: #DEDFE0;
 }

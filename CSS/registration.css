@@ -146,8 +146,8 @@ main{
     display: block;
     margin-top: 6px;
     padding: 10px;
-    background-color: rgb(255, 237, 211);
-    border:2px solid rgb(146, 127, 127) ;
+    background-color: #F9F2F3;
+    border:2px solid #0a6285 ;
     border-radius: 5px;
     width: 90%;
 }
@@ -218,9 +218,10 @@ label{
 
 form ul li {
 
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 20px;
     font-size: medium;
+    margin-left: 30px;
 }
 
 html, body {
@@ -243,4 +244,28 @@ body {
     font-size:50px ;
     font-family: 'Train One', cursive;
     color: #DEDFE0;
+}
+
+form h3{
+    margin-top:10px ;
+    margin-bottom: 30px;
+}
+header ul li:first-of-type{
+    cursor: auto;
+}
+header ul li:first-of-type:hover{
+    background-color:#0a6285 ;
+
+}
+
+input:active,input:focus{
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+select:active,select:focus{
+    outline: none;
+    box-shadow: none;
+    border: none;
 }

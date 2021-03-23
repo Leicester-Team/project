@@ -89,8 +89,11 @@ function submitholder (event){
     arr.push(userData);
     localStorage.setItem('users' , JSON.stringify(arr));
   }
+  let main =document.getElementById('main');
 
-  formregest.innerHTML = '';
+  main.innerHTML = '';
+  formregest.innerHTML='';
+  main.appendChild(formregest);
 
   let h3 = document.createElement('h3');
   h3.innerText = 'Thank you '+ arr[arr.length-1].name +' for your registration..';
@@ -116,4 +119,28 @@ function submitholder (event){
   ul.appendChild(dateLi);
 
   formregest.appendChild(ul);
+}
+
+let home= document.getElementById('home');
+home.addEventListener('click',clickHome);
+function clickHome(){
+  window.location.href = './index.html';
+}
+
+let reg= document.getElementById('reg');
+reg.addEventListener('click',clickReg);
+function clickReg(){
+  window.location.href = './registration.html';
+}
+
+let track= document.getElementById('track');
+track.addEventListener('click',clickTrack);
+function clickTrack(){
+  window.location.href = './track.html';
+}
+
+let about= document.getElementById('about');
+about.addEventListener('click',clickAbout);
+function clickAbout(){
+  window.location.href = './aboutus.html';
 }

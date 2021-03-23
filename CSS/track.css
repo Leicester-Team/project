@@ -157,6 +157,7 @@ main form{
     align-items: center;
     border: groove #0a6285 5px;
     border-radius: 20px;
+    background-color: #F9F2F3;
     
 
 }
@@ -169,8 +170,9 @@ main form input{
     background-color: #0a6285 ;
     color: #ffe3d8 ;
     font-family: 'Roboto Slab', serif;
+    border-radius: 0px;
+    border: inset #063c52;
     border-radius: 20px;
-    border: outset #0a6285;
    
 }
 main form input::placeholder{
@@ -188,9 +190,10 @@ main form select{
     background-color: #0a6285 ;
     color: #ffe3d8 ;
     font-family: 'Roboto Slab', serif;
-    border-radius: 20px;
-    border: outset #0a6285;
+    border: inset #063c52;
     text-align: center;
+    border-radius: 20px;
+
 }
 
 
@@ -325,6 +328,19 @@ main div{
 }
 
 
+header ul li:first-of-type{
+    cursor: auto;
+}
+header ul li:first-of-type:hover{
+    background-color:#0a6285 ;
 
+}
+input:active,input:focus{
+    outline: none;
+    box-shadow: none;
+}
 
-
+select:active,select:focus{
+    outline: none;
+    box-shadow: none;
+}

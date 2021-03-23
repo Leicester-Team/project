@@ -245,13 +245,15 @@ html, body {
     border-radius: 10%;
     padding: 5px;
     box-shadow: 5px 5px #ffe3d8;
-
-
     border: 5px solid #176d8f;
   
   }
+
+  div img:hover{
+    transform: rotateY(180deg);
+  }
   
-  ul li:first-of-type{
+ main ul li:first-of-type{
       color:#0a6285 ;
       font-family: 'Roboto Slab', serif;
       font-weight: bold;
@@ -278,10 +280,20 @@ main ul li a{
 
 .img img:hover{
     transform: scale(1.2);
+  
 }
 #title{
     font-weight: normal;
     font-size:50px ;
     font-family: 'Train One', cursive;
     color: #DEDFE0;
+
+}
+
+header ul li:first-of-type{
+    cursor: auto;
+}
+header ul li:first-of-type:hover{
+    background-color:#0a6285 ;
+
 }

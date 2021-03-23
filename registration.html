@@ -15,10 +15,10 @@
         <nav>
             <ul>
                 <li><img src="./img/vaccine (1).png" alt=""><a id="title">LT</a></li>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./registration.html">Registration</a></li>
-                <li><a href="./track.html">Order Tracking</a></li>
-                <li><a href="./aboutus.html">About-Us</a></li>
+                <li id="home"><a href="./index.html">Home</a></li>
+                <li id="reg"><a href="./registration.html">Registration</a></li>
+                <li id="track"><a href="./track.html">Order Tracking</a></li>
+                <li id="about"><a href="./aboutus.html">About-Us</a></li>
             </ul>
         </nav>
         <section>
@@ -26,15 +26,15 @@
         </section>
     </header>
 
-    <main class="content">
+    <main id="main" class="content">
         <p>Here You Can Register..</p>
         <form action="registration" id="form">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Insert your name" required><br>
+                <input autocomplete="off" type="text" name="name" id="name" placeholder="Insert your name" required><br>
                 <label for="age">Your Age</label>
-                <input type="number" name="age" id="age" placeholder="Insert your age" required><br>
+                <input autocomplete="off" type="number" name="age" id="age" placeholder="Insert your age" required><br>
                 <label for="phonenum">Phone Number</label>
-                <input type="text" name="phonenum" id="phonenum" placeholder="Insert your phone number " required> <br>
+                <input autocomplete="off" type="text" name="phonenum" id="phonenum" placeholder="Insert your phone number " required> <br>
                 <label for="vaccines">Vaccine Type</label>
                 <select id="vaccines">
                     <option value="Sputnik V" selected>Sputnik V</option>

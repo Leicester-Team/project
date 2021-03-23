@@ -194,3 +194,10 @@ html, body {
     font-family: 'Train One', cursive;
     color: #DEDFE0;
 }
+header ul li:first-of-type{
+    cursor: auto;
+}
+header ul li:first-of-type:hover{
+    background-color:#0a6285 ;
+
+}

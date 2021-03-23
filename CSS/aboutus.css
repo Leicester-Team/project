@@ -58,7 +58,6 @@ header section{
     width: 100%;
     background-size: 100%;
     background-image: url("../img/home-banner.jpg");
-    /* background-size:cover ; */
     background-repeat: no-repeat;
     padding: 120px;
     position: relative;
@@ -73,12 +72,13 @@ header section h2{
     font-size:30px;
     color:white;  
     position:absolute;
-
     left:0;
     bottom:50px;
     opacity: 0.85;
     font-family: 'Roboto Slab', serif;
 }
+
+
 
 footer{
     width: 100%;
@@ -148,57 +148,24 @@ main{
 main article{
 	width: 100%;
 	text-align: center;
+    background-color:#0a6285;
+    margin-bottom:35px;
+    border-radius:15px;
+    box-shadow: 5px 5px #ffe3d8;
+
+    border: groove #0a6285;
 }
 
 main h1{
     color: #ffe3d8;
     font-weight: bold;
-    background-color:#0a6285;
     font-size:30px ;
     display: inline-block;
-    padding:25px;
     text-align:center;
-    border: groove #0a6285 ;
+    padding: 15px;
 
-    margin-bottom:35px;
-    border-top-left-radius:15px;
-    border-top-right-radius:15px;
 }
 
-/* main section div{
-    display:inline-block;
-    width:45%;
-    margin:auto;
-    text-align:center;
-    position: relative;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-} */
-
-/* main section div:hover{
-    transform: rotateY(180deg);
-}
-
-main section div img,main section div ul{
--webkit-backface-visibility: hidden; 
-backface-visibility: hidden;
-}
-
-main section div img{
-    width: 300px;
-    height:300px;
-    border-radius:50%;  
-}
-
-main section div ul{
-transform: rotateY(180deg);
-width: 300px;
-height:300px;
- border-radius:50%;
- vertical-align:middle;
- background-color:#0a6285;
-
-} */
 
 #div1{
     width: 22%;
@@ -259,7 +226,6 @@ html, body {
       font-weight: bold;
       vertical-align: top;
       margin-top: 3px;
-
 
 }
 

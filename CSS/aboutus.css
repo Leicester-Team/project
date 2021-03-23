@@ -161,29 +161,7 @@ main h1{
     font-family: 'Roboto Slab', serif;
 }
 
-#div1{
-    width: 22%;
-    float: left;
-    text-align: center;
-}
 
-#div2{
-    width: 22%;
-    float: right;
-    text-align: center;
-}
-
-#div3{
-    width: 22%;
-    float: left;
-    text-align: center;
-}
-
-#div4{
-    width: 22%;
-    float: right;
-    text-align: center;
-}
 
 html, body {
     height: 100%;
@@ -202,18 +180,7 @@ body {
     flex-shrink: 0;
 }
 
-div img{
-    height: 280px;
-    width: 175px;
-    border-radius: 10%;
-    padding: 5px;
-    box-shadow: 5px 5px #ffe3d8;
-    border: 5px solid #176d8f;
-}
 
-div img:hover{
-    transform: rotateY(180deg);
-}
   
 main ul li:first-of-type{
     color:#0a6285 ;
@@ -254,4 +221,70 @@ header ul li:first-of-type{
 
 header ul li:first-of-type:hover{
     background-color:#0a6285 ;
+}
+
+.flip-card {
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #f3f4ed;
+    color: black;
+    width: 80%;
+    height: 100%;
+  }
+  
+  .flip-card-back {
+    background-color: var(--seconderyColor);
+    color: white;
+    transform: rotateY(180deg);
+    padding :10px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 21px;
+  }
+
+  .container{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+  }
+
+  div img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+    padding: 5px;
+    box-shadow: 5px 5px #ffe3d8;
+    border: 5px solid #176d8f;
+}
+
+div img:hover{
+    transform: rotateY(180deg);
 }

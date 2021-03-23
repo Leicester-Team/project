@@ -47,10 +47,9 @@ function submitHolder(event){
 function chartFunction() {
   var ctx = document.getElementById('myChart').getContext('2d');
   var chart = new Chart(ctx, {
-    // The type of chart we want to create
+
     type: 'bar',
 
-    // The data for our dataset
     data: {
       labels: ['Sputnik V', 'AstraZeneca', 'mRNA-1273', 'BNT162b2'],
       datasets: [{
@@ -61,7 +60,6 @@ function chartFunction() {
       }]
     },
 
-    // Configuration options go here
     options: {
       scales:{
         yAxes: [{
@@ -84,7 +82,7 @@ function chartFunction() {
   });
 }
 
-// scales: {    xAxes: [{    ticks: {    fontColor: 'white',    fontSize: 14,             }
+
 
 
 function userpage(i){

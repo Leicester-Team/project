@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
 *{
     box-sizing: border-box;
 }
+
 header{
     width: 100%;
     margin-bottom: 30px;
 }
+
 nav{
     width: 100%;
     background-color: #0a6285 ;
@@ -14,15 +17,14 @@ nav{
     position: fixed;
     top: 0px;
     z-index: 1;
-
 }
+
 nav ul{
     width: 100%;
     display: flex;
     align-items: center;
     text-align: center;
     height: 70px;
-
 }
 
 nav li{
@@ -41,24 +43,24 @@ nav li{
 
 nav li:hover{
     background-color: #03506f;
-
 }
+
 nav li img{
     align-self: center;
     height: 50px;
     width: 50px;
-
 }
+
 nav a{
     color: #ffe3d8;
     text-decoration: none;
     align-self: center;
 }
+
 header section{
     width: 100%;
     background-size: 100%;
     background-image: url("../img/home-banner.jpg");
-    /* background-size:cover ; */
     background-repeat: no-repeat;
     padding: 120px;
     position: relative;
@@ -73,7 +75,6 @@ header section h2{
     font-size:30px;
     color:white;  
     position:absolute;
-
     left:0;
     bottom:50px;
     opacity: 0.85;
@@ -86,12 +87,9 @@ footer{
     background-color: #0a6285;
     border: groove #12759c 3px;
     margin-top: 30px;
-
-
 }
 
 footer section{
-
     width: 50%;
     float: right;
     text-align: center;
@@ -109,8 +107,8 @@ footer section img{
     right:15px;
     margin-right:20px;
     cursor: pointer;
-
 }
+
 footer section img:hover{
     transform: scale(2);
 }
@@ -125,7 +123,6 @@ footer div{
 }
 
 footer div h2{
-
     font-family: 'Roboto Slab', serif;
     color: #ffe3d8;
     float:left;
@@ -143,7 +140,6 @@ body{
 main{
     width: 90%;
     margin: auto;
-    
 }
 
 main form{
@@ -158,12 +154,9 @@ main form{
     border: groove #0a6285 5px;
     border-radius: 20px;
     background-color: #F9F2F3;
-    
-
 }
 main form input{
     text-align: center;
-    /* height: 30%; */
     vertical-align: middle;
     justify-content: center;
     height: 30%;
@@ -173,15 +166,14 @@ main form input{
     border-radius: 0px;
     border: inset #063c52;
     border-radius: 20px;
-   
 }
+
 main form input::placeholder{
     color:#ffe3d8 ;
 }
 
 main form select{
     width: 20%;
-    /* height: 30%; */
     text-align: center;
     vertical-align: middle;
     justify-content: center;
@@ -193,16 +185,13 @@ main form select{
     border: inset #063c52;
     text-align: center;
     border-radius: 20px;
-
 }
-
 
 main form label{
     color: #0a6285;
     font-family: 'Roboto Slab', serif;
     font-weight: bold;
     margin-right: 30px;
-
 }
 
 #button{
@@ -212,54 +201,53 @@ main form label{
     border-radius: 0px;
     border: 6px groove;
     border-color: #0a6285;
-
 }
-
 
 table {
     font-family: arial, sans-serif;
-    /* border-collapse: collapse; */
     text-align: center;
     width: 100%;
     border: 3px groove #0a6285;
     font-family: 'Roboto Slab', serif;
+}
 
-  }
-  thead{
-      font-weight: bold;
-  }
+thead{
+    font-weight: bold;
+}
   
-  td, th {
+td, th {
     border: 2px solid #0a6285;
     text-align: center;
     padding: 8px;
-  }
+}
   
-  tr:nth-child(even) {
+tr:nth-child(even) {
     background-color: #bbbbbb;
-  }
+}
 
-  tr td button{
-      font-weight: bolder;
-      color: rgb(156, 35, 35);
-      border: 2px groove #0a6285;
+tr td button{
+    font-weight: bolder;
+    color: rgb(156, 35, 35);
+    border: 2px groove #0a6285;
 
-  }
+}
 
-  html, body {
+html, body {
     height: 100%;
-  }
-  body {
+}
+
+body {
     display: flex;
     flex-direction: column;
-  }
-  .content {
-    flex: 1 0 auto;
-  }
-  .footer {
-    flex-shrink: 0;
-  }
+}
 
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
 
 main section{
     width: 50%;
@@ -300,9 +288,7 @@ main section button{
     border: 6px groove;
     border-color: #0a6285;
     border-radius: 5px;
-
 }
-
 
 main h2{
     color: #0a6285;
@@ -311,30 +297,30 @@ main h2{
     font-family: 'Roboto Slab', serif;
     font-weight: bold;
     margin-bottom: 30px;
-
 }
 
 main div{
-
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
 }
+
 #title{
     font-size:50px ;
     font-family: 'Train One', cursive;
     color: #DEDFE0;
 }
 
-
 header ul li:first-of-type{
     cursor: auto;
 }
+
 header ul li:first-of-type:hover{
     background-color:#0a6285 ;
 
 }
+
 input:active,input:focus{
     outline: none;
     box-shadow: none;

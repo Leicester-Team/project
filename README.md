@@ -32,4 +32,13 @@
 
 |Version|Updates|
 |----|---|
-|||
+|1.0.0|first stage of documentation|
+|1.1.0|second stage of documentation|
+|2.0.0|create Html structur for all pages|
+|2.1.0|create JS functionality for all pages |
+|2.1.1|fix pugs|
+|2.2.0|create CSS styles for all pages |
+|2.1.2|stretch goals|
+|2.2.1|adding some styles|
+|2.1.3|fix pugs|
+

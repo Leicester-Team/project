@@ -17,7 +17,6 @@ function submitHolder(event){
   event.preventDefault();
   let userSelected = event.target.user_type_list.value;
   let Oredernumber = event.target.id.value;
-
   if(parseInt(userSelected)===0){
     aside.innerText='Please select type of user';
   }else if(parseInt(userSelected)===1){

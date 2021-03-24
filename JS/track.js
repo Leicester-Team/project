@@ -7,6 +7,7 @@ let data = JSON.parse(localStorage.getItem('users'));
 let amount = JSON.parse(localStorage.getItem('amountVaccines'));
 let form = document.getElementById('form');
 let main = document.getElementById('main');
+let aside = document.getElementById('aside');
 form.addEventListener('submit',submitHolder);
 
 function submitHolder(event){
@@ -14,29 +15,30 @@ function submitHolder(event){
   let userSelected = event.target.user_type_list.value;
   let Oredernumber = event.target.id.value;
   if(parseInt(userSelected)===0){
-    alert('Please select type of user');
+    aside.innerText='Please select type of user';
   }else if(parseInt(userSelected)===1){
     if(parseInt(Oredernumber)===999){
       orderTable();
 
     }else if(!Oredernumber){
-      alert('Please put the user id');
+      aside.innerText='Please enter the user ID';
     }else{
-      alert('Wrong id number');
+      aside.innerText='Wrong ID number';
     }
   }else{
     if(!Oredernumber){
-      alert('Please put the user id');
+      aside.innerText='Please enter the user ID';
     }else{
-      for(let i=0;i<data.length;i++){
-        if(parseInt(Oredernumber)===data[i].id){
-
-          userpage(i);
-          break;
-        }else if(i===data.length-1 && parseInt(Oredernumber)!==data[i].id){
-          alert('Wrong id number');
-        }
-
+      if(data){
+        for(let i=0;i<data.length;i++){
+          if(parseInt(Oredernumber)===data[i].id){
+            userpage(i);
+            break;
+          }else if(i===data.length-1 && parseInt(Oredernumber)!==data[i].id){
+            aside.innerText='Wrong ID number';
+          }}
+      }else{
+        aside.innerText='Wrong ID number';
       }
     }
   }
@@ -46,10 +48,9 @@ function submitHolder(event){
 function chartFunction() {
   var ctx = document.getElementById('myChart').getContext('2d');
   var chart = new Chart(ctx, {
-    // The type of chart we want to create
+
     type: 'bar',
 
-    // The data for our dataset
     data: {
       labels: ['Sputnik V', 'AstraZeneca', 'mRNA-1273', 'BNT162b2'],
       datasets: [{
@@ -60,7 +61,6 @@ function chartFunction() {
       }]
     },
 
-    // Configuration options go here
     options: {
       scales:{
         yAxes: [{
@@ -83,7 +83,7 @@ function chartFunction() {
   });
 }
 
-// scales: {    xAxes: [{    ticks: {    fontColor: 'white',    fontSize: 14,             }
+
 
 
 function userpage(i){
@@ -257,9 +257,8 @@ function cancelOrder(event){
   }
 
   main.innerHTML='';
-  let h1 = document.createElement('h1');
-  h1.innerText='Your order has been canceled';
-  main.appendChild(h1);
+  aside.innerText='Your order has been canceled';
+  main.appendChild(aside);
 
 }
 

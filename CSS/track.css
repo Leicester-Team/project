@@ -159,7 +159,7 @@ main form input{
     text-align: center;
     vertical-align: middle;
     justify-content: center;
-    height: 30%;
+    height: 40px;
     background-color: #0a6285 ;
     color: #ffe3d8 ;
     font-family: 'Roboto Slab', serif;
@@ -178,7 +178,7 @@ main form select{
     vertical-align: middle;
     justify-content: center;
     margin-right: 50px;
-    height: 30%;
+    height: 40px;
     background-color: #0a6285 ;
     color: #ffe3d8 ;
     font-family: 'Roboto Slab', serif;
@@ -196,7 +196,7 @@ main form label{
 
 #button{
     margin-left: 30px;
-    height: 30%;
+    height: 40px;
     width: 15%;
     border-radius: 0px;
     border: 6px groove;
@@ -329,4 +329,28 @@ input:active,input:focus{
 select:active,select:focus{
     outline: none;
     box-shadow: none;
+}
+
+aside{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(156, 35, 35);
+    font-family: 'Roboto Slab', serif;
+    font-size: medium;
+}
+
+button:hover{
+    cursor: pointer;
+
+}
+
+#button:hover{
+    cursor: pointer;
+
+}
+
+#button:active{
+    background-color: #1481ac;
+
 }

@@ -178,6 +178,10 @@ input[type=text]:focus,input[type=number]:focus,input[type=date]:focus, select:f
     border: 3px solid #555;
 }
 
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 input[type=submit]{
     padding-left: 30px;
     padding-right: 30px;

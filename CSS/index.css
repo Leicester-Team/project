@@ -253,6 +253,8 @@ div section img{
 div div:hover{
     border: solid #0a6285 ;
     background-color: #f3f4ed ;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
 
 }
 

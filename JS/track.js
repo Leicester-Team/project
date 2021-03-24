@@ -5,6 +5,9 @@ let section =document.createElement('section');
 let article = document.createElement('article');
 let data = JSON.parse(localStorage.getItem('users'));
 let amount = JSON.parse(localStorage.getItem('amountVaccines'));
+if(amount===null){
+  amount=[20,20,20,20];
+}
 let form = document.getElementById('form');
 let main = document.getElementById('main');
 let aside = document.getElementById('aside');
@@ -14,7 +17,6 @@ function submitHolder(event){
   event.preventDefault();
   let userSelected = event.target.user_type_list.value;
   let Oredernumber = event.target.id.value;
-
   if(parseInt(userSelected)===0){
     aside.innerText='Please select type of user';
   }else if(parseInt(userSelected)===1){
@@ -130,7 +132,7 @@ function userpage(i){
   if(data[i].vaccineType ==='Sputnik V' || data[i].vaccineType ==='AstraZeneca'){
     let iframe = document.createElement('iframe');
     iframe.setAttribute('src' , 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.8572308373928!2d35.939141915103086!3d31.937633281233566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b5fa0854d6c79%3A0x1155573c248890f0!2sAlBashir%20Hospital!5e0!3m2!1sen!2sjo!4v1616353794693!5m2!1sen!2sjo');
-    iframe.setAttribute('width' , '600');
+    iframe.setAttribute('width' , '100%');
     iframe.setAttribute('height' , '450');
     iframe.setAttribute('style' , 'border:0');
     iframe.setAttribute('allowfullscreen' , '');
@@ -141,7 +143,7 @@ function userpage(i){
   else {
     let iframe = document.createElement('iframe');
     iframe.setAttribute('src' , 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3383.3027549553217!2d35.87240901510488!3d32.00691173121129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c9f85fac773a3%3A0x6cd6460a4547306f!2sJordan%20University%20Hospital!5e0!3m2!1sen!2sjo!4v1616354487981!5m2!1sen!2sjo');
-    iframe.setAttribute('width' , '600');
+    iframe.setAttribute('width' , '100%');
     iframe.setAttribute('height' , '450');
     iframe.setAttribute('style' , 'border:0');
     iframe.setAttribute('allowfullscreen' , '');
